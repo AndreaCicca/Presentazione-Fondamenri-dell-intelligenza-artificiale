@@ -8,19 +8,24 @@
 \textbf{Self-attention-based architectures}, in particular Transformers, have become the model of choice in natural language processing.
 \vspace{0.5cm}
 
-The dominant approach is to pre-train on a \textbf{large text corpus and then fine-tune on a smaller task-specific dataset}.
+The dominant approach is to pre-train on a \textbf{huge amount of samples and then fine-tune on a smaller task-specific datasets}.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{What about computer vision?}
+In computer vision before, however, \textbf{convolutional architectures remained dominant} before ViT.
+
+\begin{itemize}
+    \item Multiple works try combining \textbf{CNN-like architectures with self-attention}
+    \item Needed scalability with modern HW.
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}
 \frametitle{What computer vision?}
-In computer vision, however, \textbf{convolutional architectures remain dominant}.
-Multiple works try combining \textbf{CNN-like architectures with self-attention}, while theoretically efficient, have not yet been scaled effectively on modern hardware accelerators due to the use of specialized attention patterns. 
-\end{frame}
-
-\begin{frame}
-\frametitle{What computer vision?}
-With Vision transformer the end goal is to \textbf{apply a standard Transformer directly to images}, with the fewest possible modifications
+With Vision transformer the end goal is to \textbf{apply a standard Transformer architectures directly to images}, with the fewest possible modifications
 \begin{center}
     \includegraphics[width=0.8\textwidth]{img/1-section/Vision transformer.png} 
 \end{center}
