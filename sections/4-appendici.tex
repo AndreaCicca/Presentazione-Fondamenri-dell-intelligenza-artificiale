@@ -1,9 +1,19 @@
 \section{Appendici}
 
 \begin{frame}
+\frametitle{New era of Multimodal Unified Transformer}  
+Google, Meta, Apple, OpenAI and many more company are working in a unified approach where images and text are processed together,
+in order to provide a multimodel understanding of the world.
+\begin{center}
+    \includegraphics[width=0.6\textwidth]{img/4-section/Multimodel.png}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}
 \frametitle{ConvNeXt more benchmark}
 Push the limits of ConvNet potential, modernizing  standard ResNet towards a Transformer-like design.
-This modela have been pretrained on ImageNet-22K pre-trained models.
 
 \begin{center}
     \includegraphics[width=0.5\textwidth]{img/4-section/ConvNext2.png}
@@ -14,14 +24,14 @@ Image site, \#param, flops, image/s, Top-1
 \end{frame}
 
 
-\begin{frame}
-\frametitle{More Benchmark with ResNet}
-Benchmark between ResNet and ConvNeXt
-\begin{center}
-    \includegraphics[width=1\textwidth]{img/4-section/More-benchmark.png}
-\end{center}
+% \begin{frame}
+% \frametitle{More Benchmark with ResNet}
+% Benchmark between ResNet and ConvNeXt
+% \begin{center}
+%     \includegraphics[width=1\textwidth]{img/4-section/More-benchmark.png}
+% \end{center}
 
-\end{frame}
+% \end{frame}
 
 \begin{frame}
 \frametitle{Different ViT models}
@@ -59,4 +69,22 @@ Data has been acquired by the popular "\href{https://paperswithcode.com/sota/ima
 
 Best ResNet still below 90\% accuracy, best CNN-like RevCol-H 90.0\% accuracy.
 
+\end{frame}
+
+\begin{frame}{Self-Attention in Vision Transformers}
+    \begin{itemize}
+        \item \textbf{Attention Distance:} 
+        \begin{itemize}
+            \item Analogous to receptive field size in CNNs.
+            \item Computed based on attention weights.
+        \end{itemize}
+        \item \textbf{Observations:}
+        \begin{itemize}
+            \item Some heads attend to most of the image in the lowest layers, indicating global information integration.
+            \item Other heads show small attention distances in low layers.
+            \item Highly localized attention is less prominent in hybrid models with a preceding ResNet.
+        \end{itemize}
+        \item Localized attention in low layers may serve a similar function to early convolutional layers in CNNs.
+        \item \textbf{Depth:} Attention distance increases with network \textbf{depth}.
+    \end{itemize}
 \end{frame}

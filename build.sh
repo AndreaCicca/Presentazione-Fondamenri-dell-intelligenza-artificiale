@@ -1,1 +1,1 @@
-pdflatex-docker main.tex
+pdf-docker main.tex
