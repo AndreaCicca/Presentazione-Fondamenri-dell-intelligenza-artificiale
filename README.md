@@ -1,3 +1,5 @@
+La seguente presentazione Latex è stata scritta in Inglese
+
 # Presentation on Vision transformers' architecture
 
 A vision transformer (ViT) is a transformer designed for computer vision. 
